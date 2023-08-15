@@ -14,7 +14,7 @@ test('popup test', () => {
     + '<button type="reset" class="btn">Reset</button></div>'
     + '<div class="popUpElement" style="left: 10px; top: -75px;" data-content="PopUp Title">And here\'s some amazing contetnt. It\'s very engaging</div>';
   const button = document.querySelector('button');
-  new PopupWidget(button, new Popup());
+  PopupWidget(button, Popup());
   button.click();
   expect(document.body.innerHTML).toEqual(result);
 });
