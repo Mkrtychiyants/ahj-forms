@@ -5,4 +5,4 @@ const { default: Popup } = require('./component/popup');
 
 const button = document.querySelector('button');
 
-new PopupWidget(button, new Popup());
+PopupWidget(button, new Popup());
